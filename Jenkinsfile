@@ -28,6 +28,7 @@ pipeline {
     stage('Deploy') {
       steps {
         echo 'Deploy'
+        sh 'echo \'Deploy FAIL\'; exit 1'
       }
     }
   }
