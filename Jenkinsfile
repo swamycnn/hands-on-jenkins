@@ -16,6 +16,7 @@ pipeline {
         stage('Test Chrome') {
           steps {
             sh 'echo \'Testing Chrome\''
+            sh 'echo \'Testing Chrome\'; exit 1'
           }
         }
         stage('Test Edge') {
